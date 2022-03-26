@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <img src={svg} alt="logo" id="logo"></img>
-      <h2>Languages</h2>
+      <h2 className="title">Languages</h2>
       <div className="container">
-        {categories.map((card) => (
+              {categories.map((card) => (
           <Card key={card.name} {...card} />
         ))}
       </div>
